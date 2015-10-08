@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lambert conformal conic projection</title>
+	<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" />
+	<style>
+
+		* {
+			box-sizing: border-box;
+			font-family: Helvetica, Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		html, body, body > div, .map-wrapper, .controls {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+
+		body {
+			color: #edf0f0;
+			background: url( "imgs/wc_ii_dark.gif" );
+		}
+			body > div {
+				overflow: hidden;
+				margin: 40px;
+			}
+
+		.light {
+			color: #d3d6df;
+		}
+		.clearfix:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+		.clearfix { display: inline-block; }
+		/* start commented backslash hack \*/
+		* html .clearfix { height: 1%; }
+		.clearfix { display: block; }
+		/* close commented backslash hack */
+
+		.page-wrap {
+			width: 1050px;
+			margin: 30px auto;
+			text-align: center;
+		}
+
+		.page-header {
+			margin-bottom: 30px;
+		}
+			.page-header h1,
+			.page-header .controls {
+				/*float: left;*/
+			}
+			h1 {
+				margin: 10px 0 30px;
+				font-size: 32px;
+				font-weight: 100;
+				letter-spacing: 1px;
+			}
+				h1 strong {
+					font-weight: 500;
+				}
+
+		.page-content {
+			height: calc(100% - 300px);
+		}
+		
+		.map-wrapper {
+			width: 100%;
+			border: 1px solid #a2c9db;
+		}
+			.countries {
+				fill: #a2c9db;
+				stroke: #3f4a54;
+				stroke-width: .2;
+			}
+
+		.controls {
+			margin: 20px auto;
+		}
+			.controls ul {
+				list-style-type: none;
+				margin: 0;
+			}
+			.control {
+				float: left;
+				width: 120px;
+				cursor: ew-resize;
+				margin-right: 20px;
+				padding: 20px;
+				background-color: rgba(0,0,0,.4);
+			}
+				.control label {
+					cursor: ew-resize;
+					pointer-events: none;
+					-moz-user-select: none;
+					-webkit-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+				}
+				.control .fa {
+					position: relative;
+					top: -4px;
+					opacity: .1;
+					font-size: 30px;
+				}
+				.control input {
+					display: none;
+				}
+				.control-value,
+				.control-name {
+					display: block;
+					text-align: center;
+				}
+					.control-value {
+						font-size: 32px;
+						font-weight: 500;
+					}
+					.control-name {
+					    font-size: 12px;
+					    letter-spacing: 1px;
+					    font-weight: 100;
+					    text-transform: uppercase;
+					}
+
+		.graticule, .graticule-outline {
+			fill: none;
+			stroke: 1px solid black;
+			stroke-width: .1;
+			stroke: #ccc;
+		}
+	</style>
+</head>
+<body>
+
+<!-- inject:js -->
+<!-- endinject -->
+
+</body>
+</html>
